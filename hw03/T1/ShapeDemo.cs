@@ -13,16 +13,16 @@ namespace T1
             try
             {
                 Rectangle rec = new Rectangle(2, 3);
-                Console.WriteLine($"长方形的面积：{rec.Area()}");
-                Console.WriteLine($"长方形的周长：{rec.Primeter()}\n");
+                Console.WriteLine($"长方形的面积：{rec.Area().ToString("0.000")}");
+                Console.WriteLine($"长方形的周长：{rec.Primeter().ToString("0.000")}\n");
 
                 Square sq = new Square(6);
-                Console.WriteLine($"正方形的面积：{sq.Area()}");
-                Console.WriteLine($"正方形的周长：{sq.Primeter()}\n");
+                Console.WriteLine($"正方形的面积：{sq.Area().ToString("0.000")}");
+                Console.WriteLine($"正方形的周长：{sq.Primeter().ToString("0.000")}\n");
 
                 Triangle tr = new Triangle(1, 1, 1);
-                Console.WriteLine($"三角形的面积：{tr.Area()}");
-                Console.WriteLine($"三角形的周长：{tr.Primeter()}\n");
+                Console.WriteLine($"三角形的面积：{tr.Area().ToString("0.000")}");
+                Console.WriteLine($"三角形的周长：{tr.Primeter().ToString("0.000")}\n");
             }
             catch (ShapeIllegalException e)
             {

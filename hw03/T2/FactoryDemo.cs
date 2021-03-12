@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using T1;
 
 namespace T2
@@ -20,6 +20,7 @@ namespace T2
                 Shape shape = shapeFactory.GetShapeRandomly(shapeName[ra.Next(0, 3)]);
                 Console.WriteLine($"创建{shape.GetType().Name},\t{shape.ShapeInfo()}");
                 areaSum += shape.Area();
+                Thread.Sleep(100);
             }
             Console.WriteLine($"\n这些图形的总面积为：{areaSum.ToString("0.000")}");
         }
